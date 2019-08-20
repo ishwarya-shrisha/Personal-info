@@ -128,3 +128,95 @@ footer {
     margin-top: 30px;
     line-height: 1.5em;
 }
+
+
+/* Form */
+
+span+span {
+    margin-left: 15px;
+}
+
+form span+div {
+    margin-top: 20px;
+}
+
+textarea {
+    margin-top: 10px;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+form>div+div {
+    margin-top: 25px;
+}
+
+label {
+    padding-top: 10px
+}
+
+.flex--column {
+    padding-right: 30px
+}
+
+#contact-form {
+    max-width: 880px;
+    font-size: 13px
+}
+
+#root {
+    border: solid 3px #eee;
+    background: #fff;
+    /* Establish a grid. */
+    display: grid;
+    /* Set up 2 columns - first is a width of 12rems, the other is decided by the browser. */
+    grid-template-columns: 12rem auto;
+    grid-template-rows: min-content auto auto min-content;
+    /* Named areas. */
+    grid-template-areas: "navigation header" "navigation main" "navigation main" "navigation footer";
+    margin: 100px 250px 100px 250px;
+}
+
+nav {
+    grid-area: navigation;
+}
+
+nav>ul {
+    flex-direction: column;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+}
+.aboutlearn {
+    text-align: center;
+    padding-right: 90px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.aboutpara {
+    padding-right: 50px;
+    margin-top: 30px;
+    line-height: 1.5em;
+}
+.aboutfacts {
+    text-align: left;
+    margin-top: 50px;
+}
+figcaption {
+    text-align: center;
+    padding-right: 170px;
+    width: 500px;
+}
